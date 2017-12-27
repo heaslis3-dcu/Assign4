@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Assign4 2017 Sean Heaslip</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="PT_Str">INFO</string>
+    <string name="infoPageTitle">INFO</string>
+    <string name="listPageTitle">LIST</string>
+    <string name="orderPageTitle">ORDER</string>
+    <string name="accountPageTitle">ACCOUNT</string>
+   <!--Testing use of String array to populate page titles-->
+    <string-array name="page_titles">
+        <item>tab1</item>
+        <item>tab2</item>
+        <item>tab3</item>
+        <item>tab4</item>
+    </string-array>
+
+</resources>
