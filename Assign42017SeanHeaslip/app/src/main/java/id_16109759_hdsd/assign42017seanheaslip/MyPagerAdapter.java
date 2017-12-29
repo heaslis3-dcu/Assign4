@@ -1,7 +1,6 @@
 package id_16109759_hdsd.assign42017seanheaslip;
 
-import android.content.Context;
-import android.content.res.Resources;
+
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -13,7 +12,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class MyPagerAdapter extends FragmentPagerAdapter
 {
 //Using Context to call String resource for Page Title
-    Context context;
+
     int pageTitleLength = 4;
 
 
@@ -38,7 +37,7 @@ public class MyPagerAdapter extends FragmentPagerAdapter
                 case 0:
                     return new FragmentInfo();
                 case 1:
-                    return new FragmentList();
+                    return new FragmentListChemView();
                 case 2:
                     return new FragmentOrder();
                 case 3:
@@ -69,13 +68,13 @@ public class MyPagerAdapter extends FragmentPagerAdapter
             switch (position)
             {
                 case 0:
-                    return context.getString(R.string.infoPageTitle);
+                    return "INFO";
                 case 1:
-                    return context.getString(R.string.listPageTitle);
+                    return "LIST";
                 case 2:
-                    return context.getString(R.string.orderPageTitle);
+                    return "ORDER";
                 case 3:
-                    return context.getString(R.string.accountPageTitle);
+                    return "ACCOUNT";
             }
             return null;
         }

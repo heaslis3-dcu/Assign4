@@ -1,11 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:orientation="vertical"
-                android:padding="@dimen/default_Padding"
-                tools:context="id_16109759_hdsd.assign42017seanheaslip.MainActivity">
+                android:padding="@dimen/default_Padding">
 
     <EditText
         android:id="@+id/edtTextFrom"
@@ -23,7 +23,6 @@
         android:background="@color/colorPrimary"
         android:contentDescription=""
         android:onClick="captureImage"
-
         app:srcCompat="@drawable/cameratrans"
         tools:ignore="ContentDescription"/>
 
@@ -55,7 +54,7 @@
         android:layout_below="@id/edTxtDescription"
         android:hint="@string/optional_phonenumber"
         android:inputType="phone"
-        />
+/>
 
     <TableRow
         android:id="@+id/tableRow"
