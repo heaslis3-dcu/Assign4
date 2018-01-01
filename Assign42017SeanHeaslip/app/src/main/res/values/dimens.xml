@@ -12,4 +12,6 @@
     <dimen name="minor_padding">8dp</dimen>
     <!--text size small-->
     <dimen name="txtsize">12sp</dimen>
+    <dimen name="txtViewPadding">16dp</dimen>
+    <dimen name="info_Name">16sp</dimen>
 </resources>

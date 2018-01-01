@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by seanh on 27/12/2017.
@@ -18,7 +19,7 @@ import android.widget.TextView;
 public class FragmentInfo extends Fragment
 {
     String msg = "Hello!";
-    int secs = 10;
+    int secs = 5;
     FloatingActionButton timer;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
@@ -32,6 +33,10 @@ public class FragmentInfo extends Fragment
             public void onClick(View v)
             {
                 startTimer(msg, secs);
+
+            }
+            public void onFinish(){
+                msg = "Test";
             }
         });
 

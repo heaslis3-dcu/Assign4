@@ -6,23 +6,45 @@
                                                  android:layout_height="match_parent"
                                                  android:fitsSystemWindows="true"
                 tools:context="id_16109759_hdsd.assign42017seanheaslip.MainActivity">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <TextView
         android:id="@+id/tab1"
-        android:text="Info"
-        android:textSize="16sp"
+        android:text="Welcome to McCabes Pharmacy Santry"
+        android:textSize="@dimen/info_Name"
+        android:textStyle="bold"
+        android:padding="@dimen/txtViewPadding"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtopeningTimes"
+        android:text="@string/opening_times"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/txtViewPadding"/>
+    <TextView
+        android:id="@+id/opening_dayTime"
+        android:text="@string/day_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/txtViewPadding"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/pharmmccabes_santry"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_gravity="end|bottom"
+        android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-
         app:srcCompat="@android:drawable/ic_lock_idle_alarm"/>
 
-
+</LinearLayout>
 </android.support.design.widget.CoordinatorLayout>
