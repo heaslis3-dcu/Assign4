@@ -18,8 +18,8 @@ import android.widget.Toast;
 
 public class FragmentInfo extends Fragment
 {
-    String msg = "Hello!";
-    int secs = 5;
+    String msg = "I can set a timer!";
+    int secs = 10;
     FloatingActionButton timer;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
@@ -29,14 +29,13 @@ public class FragmentInfo extends Fragment
         FloatingActionButton timerFab = (FloatingActionButton) rootView.findViewById(R.id.fab);
         timerFab.setOnClickListener(new View.OnClickListener()
         {
+
             @Override
             public void onClick(View v)
             {
+
                 startTimer(msg, secs);
 
-            }
-            public void onFinish(){
-                msg = "Test";
             }
         });
 
@@ -44,8 +43,8 @@ public class FragmentInfo extends Fragment
     }
     public void startTimer(String message, int seconds) {
         Intent intent = new Intent(AlarmClock.ACTION_SET_TIMER)
-                .putExtra(AlarmClock.EXTRA_MESSAGE, message)
-                .putExtra(AlarmClock.EXTRA_LENGTH, seconds);
+                .putExtra(AlarmClock.EXTRA_LENGTH, seconds)
+                .putExtra(AlarmClock.EXTRA_MESSAGE, message);
             startActivity(intent);
     }
 }

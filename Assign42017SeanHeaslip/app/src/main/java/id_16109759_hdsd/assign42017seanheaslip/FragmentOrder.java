@@ -59,7 +59,7 @@ public class FragmentOrder extends Fragment
         emailRegards = getResources().getString(R.string.Msg_Part3); //Message details
         //Spinner - selection Array Adapater
         m_SpinnerClick = (Spinner) rootView.findViewById(R.id.spinner);
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(getActivity().getApplicationContext(),
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(getActivity(),
                 R.array.collectionTimes,
                 android.R.layout.simple_spinner_dropdown_item);
         m_SpinnerClick.setAdapter(adapter);
@@ -130,15 +130,15 @@ public class FragmentOrder extends Fragment
                 //If statement to prevent user opening email without first entering a name
                 if (edtText_Name.getText().toString().isEmpty())
                 {
-                    Toast.makeText(getActivity().getApplicationContext(), "You must enter your NAME to proceed!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "You must enter your NAME to proceed!", Toast.LENGTH_SHORT).show();
                     Log.i(TAG, "Name not entered.");
                 } else if (m_ImageUri == null)
                 {
-                    Toast.makeText(getActivity().getApplicationContext(), "The prescription photo has not been taken!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "The prescription photo has not been taken!", Toast.LENGTH_SHORT).show();
                     Log.i(TAG, "Image not taken.");
                 } else if (mSpinnerTxtV.getText().toString().isEmpty())
                 {
-                    Toast.makeText(getActivity().getApplicationContext(), "Oops! You forgot the collection time!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Oops! You forgot the collection time!", Toast.LENGTH_SHORT).show();
                     Log.i(TAG, "Collection Time not selected.");
                 } else
                 {
@@ -193,7 +193,7 @@ public class FragmentOrder extends Fragment
                 //Toast.makeText(this, "ImageFilePath is: " + m_ImageFile, Toast.LENGTH_LONG).show();
             } else
             {
-                Toast.makeText(getActivity().getApplicationContext(), "There was an error saving your accessing your image", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "There was an error saving your accessing your image", Toast.LENGTH_SHORT).show();
             }
         }
     }

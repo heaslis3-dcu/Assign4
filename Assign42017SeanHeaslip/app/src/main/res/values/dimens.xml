@@ -14,4 +14,5 @@
     <dimen name="txtsize">12sp</dimen>
     <dimen name="txtViewPadding">16dp</dimen>
     <dimen name="info_Name">16sp</dimen>
+    <dimen name="imageMargin">16dp</dimen>
 </resources>

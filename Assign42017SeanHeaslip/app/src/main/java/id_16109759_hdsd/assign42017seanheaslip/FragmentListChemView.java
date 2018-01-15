@@ -1,6 +1,7 @@
 package id_16109759_hdsd.assign42017seanheaslip;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,11 +42,11 @@ public class FragmentListChemView extends Fragment
         // Create an {@link AndroidFlavorAdapter}, whose data source is a list of
         // {@link AndroidFlavor}s. The adapter knows how to create list item views for each item
         // in the list.
-        AndroidFlavorAdapter flavorAdapter = new AndroidFlavorAdapter(getActivity().getApplicationContext(),androidFlavors);
+        AndroidFlavorAdapter flavorAdapter = new AndroidFlavorAdapter(getActivity(),androidFlavors);
         // Get a reference to the ListView, and attach the adapter to the listView.
-        ImageView imgView = (ImageView) rootView.findViewById(R.id.list_item_icon);
+       /** ImageView imgView = (ImageView) rootView.findViewById(R.id.list_item_icon);
         TextView txtView1 = (TextView) rootView.findViewById(R.id.version_name);
-        TextView txtView2 = (TextView) rootView.findViewById(R.id.version_number);
+        TextView txtView2 = (TextView) rootView.findViewById(R.id.version_number); */
         ListView listView = (ListView) rootView.findViewById(R.id.listview_flavor);
         listView.setAdapter(flavorAdapter);
 
@@ -60,13 +61,14 @@ public class FragmentListChemView extends Fragment
     *
     * Does not require clickable added to xml
     */
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l)
             {
                 String item = androidFlavors.get(position).getVersionName();
-                Toast.makeText(getActivity().getApplicationContext(), item, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), item, Toast.LENGTH_SHORT).show();
 
             }
         });
