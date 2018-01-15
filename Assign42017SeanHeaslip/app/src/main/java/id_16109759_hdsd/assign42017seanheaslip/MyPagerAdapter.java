@@ -40,7 +40,7 @@ public class MyPagerAdapter extends FragmentPagerAdapter
                     return new FragmentListChemView();
                 case 2:
                     return new FragmentOrder();
-                case 3:
+               case 3:
                     return new FragmentAccount();
             }
             return null;

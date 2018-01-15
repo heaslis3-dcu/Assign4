@@ -114,4 +114,10 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+    <string name="account_Title">Application Preferences</string>
+    <string name="accTxt_CustName">Customer Name</string>
+    <string name="accTxt_Password">Password</string>
+    <string name="action_send">action_Send</string>
+    <string name="action_send2">action_Send2</string>
+    <string name="share">Share</string>
 </resources>
