@@ -4,6 +4,13 @@
       tools:context="id_16109759_hdsd.assign42017seanheaslip.MainActivity">
 
     <item
+        android:id="@+id/action_send"
+        android:orderInCategory="1"
+        android:title="@string/action_send"
+        android:icon="@drawable/ic_send_white_24dp"
+        app:showAsAction="ifRoom"
+        />
+    <item
         android:id="@+id/action_send2"
         android:orderInCategory="2"
         android:title="@string/share"

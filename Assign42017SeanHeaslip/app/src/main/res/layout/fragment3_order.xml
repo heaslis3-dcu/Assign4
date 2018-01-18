@@ -92,15 +92,7 @@
             android:textColor="#FF0000"/>
     </TableRow>
 
-    <Button
-        android:id="@+id/sendOrderBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="openEmail"
-        android:padding="@dimen/default_Padding"
-        android:text="@string/send_order"/>
+
 
 
 </RelativeLayout>
