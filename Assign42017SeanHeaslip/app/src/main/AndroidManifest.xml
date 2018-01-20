@@ -3,10 +3,14 @@
           package="id_16109759_hdsd.assign42017seanheaslip">
 
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
-
+    <uses-permission android:name="android.permission.VIBRATE"/>
+<!--icon_launcher_alt obtained from:
+Ref: https://pixabay.com/en/medicine-pharmaceuticals-pill-bottle-2801025/
+Date: 19-01-2018
+-->
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_alt"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -20,6 +24,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".OpenCalendar"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
 
     </application>

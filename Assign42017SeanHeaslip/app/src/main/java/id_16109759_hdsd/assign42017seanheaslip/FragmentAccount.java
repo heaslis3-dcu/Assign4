@@ -29,6 +29,8 @@ public class FragmentAccount extends Fragment
 /**
  * Code modified from:
  * Reference: https://stackoverflow.com/questions/29974539/
+ * https://github.com/afarber/android-newbie/blob/master/
+ * MyPrefs/src/de/afarber/myprefs/PrefFragment.java
  * Date:15/01/2018
  */
 

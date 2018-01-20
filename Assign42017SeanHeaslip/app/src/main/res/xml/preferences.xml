@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto">
     
     <PreferenceCategory 
         android:title="Application Preferences"
         android:key="category_1">
 
-        <EditTextPreference 
+        <EditTextPreference
             android:dependency="boolean_1"
             android:key="custName"
             android:title="Customer Name"
+            android:dialogTitle="Change User Name"
+            android:dialogMessage="     Enter your name"
             android:inputType="textPersonName"
             android:summary=""/>
         <EditTextPreference 
             android:dependency="boolean_1"
             android:key="custPassword"
             android:title="Password"
+            android:dialogTitle="Change User Password"
+            android:dialogMessage="     Enter your password"
             android:inputType="textPassword"
             android:persistent="true" />
         <EditTextPreference
             android:dependency="boolean_1"
             android:key="custEmail"
             android:title="Email"
+            android:dialogTitle="Change User Email"
+            android:dialogMessage="     Enter your email address"
             android:inputType="textEmailAddress"
             android:summary=""/>
         <CheckBoxPreference
