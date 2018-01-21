@@ -14,10 +14,6 @@
      limitations under the License.
 -->
 <!-- Layout for a single list item -->
-<!-- Included onClick method in LinearLayout
-     Tested onClick with image, individual TextViews,
-     however settled on LinearLayout on 27/11/2017
-     Removed id and clickable from LinearLayout-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -26,7 +22,6 @@
               android:minHeight="?android:attr/listPreferredItemHeight"
               android:orientation="horizontal"
               android:padding="@dimen/default_Padding"
-
               tools:context="id_16109759_hdsd.assign42017seanheaslip.MainActivity">
 
     <ImageView

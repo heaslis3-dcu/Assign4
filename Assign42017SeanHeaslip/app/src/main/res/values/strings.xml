@@ -135,4 +135,6 @@
 
     <string name="action_share">Share</string>
     <string name="action_reply">Reply</string>
+    <string name="mNotificationTicker">Notification Started</string>
+    <string name="header_Txt">Welcome to McCabes Pharmacy Santry</string>
 </resources>

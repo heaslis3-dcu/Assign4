@@ -27,7 +27,7 @@ Date: 19-01-2018
         </activity>
         <activity
             android:name=".OpenCalendar"
-            android:label="@string/app_name"
+            android:label="@string/action_send"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
 

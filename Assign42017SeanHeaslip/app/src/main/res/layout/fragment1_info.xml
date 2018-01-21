@@ -1,51 +1,71 @@
-<android.support.design.widget.CoordinatorLayout android:id="@+id/main_content"
-                                                 xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
                                                  xmlns:app="http://schemas.android.com/apk/res-auto"
                                                  xmlns:tools="http://schemas.android.com/tools"
+                                                 android:id="@+id/main_content"
                                                  android:layout_width="match_parent"
                                                  android:layout_height="match_parent"
                                                  android:fitsSystemWindows="true"
-                tools:context="id_16109759_hdsd.assign42017seanheaslip.MainActivity">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-    <TextView
-        android:id="@+id/tab1"
-        android:text="Welcome to McCabes Pharmacy Santry"
-        android:textSize="@dimen/info_Name"
-        android:textStyle="bold"
-        android:padding="@dimen/txtViewPadding"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+                                                 tools:context="id_16109759_hdsd.assign42017seanheaslip.MainActivity">
 
-    <TextView
-        android:id="@+id/txtopeningTimes"
-        android:text="@string/opening_times"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/txtViewPadding"/>
-    <TextView
-        android:id="@+id/opening_dayTime"
-        android:text="@string/day_time"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/txtViewPadding"/>
-
-    <android.support.v7.widget.AppCompatImageView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:layout_margin="@dimen/imageMargin"
-        android:src="@drawable/pharmmccabes_santry"/>
+        android:orientation="vertical">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        app:srcCompat="@android:drawable/ic_lock_idle_alarm"/>
+        <TextView
+            android:id="@+id/tab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/txtViewPadding"
+            android:text="@string/header_Txt"
+            android:textSize="@dimen/info_Name"
+            android:textStyle="bold"/>
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/txtopeningTimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/txtViewPadding"
+            android:textSize="@dimen/txtsize"
+            android:text="@string/opening_times"/>
+
+        <TextView
+            android:id="@+id/opening_dayTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txtsize"
+            android:padding="@dimen/txtViewPadding"
+            android:text="@string/day_time"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/imageMargin"
+            android:layout_weight="1"
+            android:src="@drawable/pharmmccabes_santry"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            app:srcCompat="@android:drawable/ic_lock_idle_alarm"/>
+
+    </LinearLayout>
 </android.support.design.widget.CoordinatorLayout>

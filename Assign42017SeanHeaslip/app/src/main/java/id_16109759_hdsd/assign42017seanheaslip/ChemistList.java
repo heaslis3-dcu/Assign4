@@ -15,16 +15,12 @@
  */
 package id_16109759_hdsd.assign42017seanheaslip;
 
-import android.view.View;
-import android.widget.Toast;
-
 /**
- * {@link AndroidFlavor} represents a single Android platform release.
+ * {@link ChemistList} represents a single Chemistlist item.
  * Each object has 3 properties: name, version number, and image resource ID.
  */
-public class AndroidFlavor {
-
-
+public class ChemistList
+{
     // Name of the Android version (e.g. Gingerbread, Honeycomb, Ice Cream Sandwich)
     private String mVersionName;
 
@@ -35,13 +31,13 @@ public class AndroidFlavor {
     private int mImageResourceId;
 
     /*
-    * Create a new AndroidFlavor object.
+    * Create a new ChemistList object.
     *
     * @param vName is the name of the Android version (e.g. Gingerbread)
     * @param vNumber is the corresponding Android version number (e.g. 2.3-2.7)
     * @param image is drawable reference ID that corresponds to the Android version
     * */
-    public AndroidFlavor(String vName, String vNumber, int imageResourceId)
+    public ChemistList(String vName, String vNumber, int imageResourceId)
     {
         mVersionName = vName;
         mVersionNumber = vNumber;
@@ -49,14 +45,14 @@ public class AndroidFlavor {
     }
 
     /**
-     * Get the name of the Android version
+     * Get the name of the Chemist Item Name
      */
     public String getVersionName() {
         return mVersionName;
     }
 
     /**
-     * Get the Android version number
+     * Get the Android Chemist Item Number
      */
     public String getVersionNumber() {
         return mVersionNumber;
