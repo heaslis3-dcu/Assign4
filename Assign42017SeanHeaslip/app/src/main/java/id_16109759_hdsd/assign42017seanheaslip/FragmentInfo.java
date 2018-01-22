@@ -18,6 +18,7 @@ import android.provider.AlarmClock;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +31,7 @@ import android.view.ViewGroup;
 
 public class FragmentInfo extends Fragment
 {
+    private static final String TAG = "Assign4";
     String msg = "I can set a timer!";
     int secs = 10;
     FloatingActionButton timer;
@@ -45,7 +47,7 @@ public class FragmentInfo extends Fragment
             @Override
             public void onClick(View v)
             {
-
+                Log.d(TAG, "Timer clicked");
                 startTimer(msg, secs);
             }
         });

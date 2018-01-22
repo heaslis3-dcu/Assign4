@@ -2,6 +2,7 @@ package id_16109759_hdsd.assign42017seanheaslip;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,7 @@ import java.util.ArrayList;
 
 public class FragmentList extends Fragment
 {
+    private static final String TAG = "Assign4";
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
@@ -61,6 +63,7 @@ public class FragmentList extends Fragment
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l)
             {
+                Log.d(TAG, "List item clicked");
                 String item = chemistARList.get(position).getVersionName();
                 Toast.makeText(getActivity(), item, Toast.LENGTH_SHORT).show();
             }

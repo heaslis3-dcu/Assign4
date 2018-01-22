@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.CalendarContract;
+import android.util.Log;
 
 //Created by seanh on 20/01/2018.
 /**
@@ -13,6 +14,7 @@ import android.provider.CalendarContract;
 
 public class OpenCalendar extends Activity
 {
+    private static final String TAG = "Assign4";
     String mtitle = "Refill Prescription";
     String mlocation = "McCabes Pharmacy Santry";
 
@@ -28,6 +30,7 @@ public class OpenCalendar extends Activity
 
         if (myCalendarIntent.resolveActivity(getPackageManager()) != null)
         {
+            Log.d(TAG, "Calendar started");
             startActivity(myCalendarIntent);
         }
     }

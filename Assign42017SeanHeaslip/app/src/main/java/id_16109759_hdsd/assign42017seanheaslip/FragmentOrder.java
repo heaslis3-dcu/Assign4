@@ -33,7 +33,7 @@ import static android.app.Activity.RESULT_OK;
 public class FragmentOrder extends Fragment
 {
     private static String emailTo, emailSubject, emailName, emailMsgPart1, emailMsgPart2, emailRegards;
-    private static final String TAG = "Assign3";
+    private static final String TAG = "Assign4";
     private static final int REQUEST_SHARE = 39714;
     private static final int REQUSET_EMAIL = 1;
     private File m_ImageFile;

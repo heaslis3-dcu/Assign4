@@ -22,6 +22,8 @@ import android.support.v7.preference.PreferenceFragmentCompat;
 public class FragmentAccount extends PreferenceFragmentCompat
         implements SharedPreferences.OnSharedPreferenceChangeListener
 {
+    private static final String TAG = "Assign4";
+
     EditTextPreference mCustName;
     EditTextPreference mCustPW;
     EditTextPreference mCustEmail;

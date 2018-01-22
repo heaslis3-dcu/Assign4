@@ -13,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity
     String mtitle = "Refill Prescription";
     String mlocation = "McCabes Pharmacy, Northwood Park, Santry, Dublin, Ireland";
 
-
+    private static final String TAG = "Assign4";
     private MyPagerAdapter mSectionsPagerAdapter;
     NotificationCompat.Builder notification;
     private static final int UNIQUE_ID = 78952;
@@ -108,6 +109,7 @@ public class MainActivity extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_send)
         {
+            Log.d(TAG, "Notification started"); //Notification Log message
             NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(MainActivity.this)
                     .setSmallIcon(R.drawable.ic_heart)
                     .setTicker(getString(R.string.mNotificationTicker))
@@ -121,6 +123,7 @@ public class MainActivity extends AppCompatActivity
 
             notificationBuilder.setContentText(mNotificationText);
 
+            Log.d(TAG, "Calendar started"); //Calendar Log message
             //Calendar Intent
             Intent myCalendarIntent = new Intent(Intent.ACTION_INSERT)
                     .setData(CalendarContract.Events.CONTENT_URI)
